@@ -1,0 +1,15 @@
+#!/usr/bin/python2
+
+# This is used for dzen2 to determine what brightness the computer is currently
+# at. Dependent on 'xbacklight' being installed.
+
+import subprocess
+
+try:
+
+    proc = subprocess.Popen(["xbacklight"], stdout=subprocess.PIPE, shell=True)
+    (out, err) = proc.communicate()
+    print "{0} {1}{2}".format("BRI", int(float(out)), "%")
+
+except Exception as e:
+    pass

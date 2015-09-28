@@ -1,0 +1,16 @@
+#!/bin/bash
+dmenu_run\
+ -l 5\
+ -nb "#1B1D1E"\
+ -nf "#80D4FF"\
+ -sb "#333333"\
+ -sf "#FFFFFF"\
+ -p Execute:\
+ -f\
+ -i\
+ -fn "Inconsolata:size=14"\
+ -h 32\
+ -w 1520\
+ -x 200\
+ -y 200\
+

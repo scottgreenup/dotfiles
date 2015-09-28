@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+findresult=`find ~/ | sed 's/ /\\ /g' | dmenu -i -l 20 -nb '#2e3436' -nf '#9999CC'`
+
+if [[ $findresult ]]
+then
+    urxvt -e vim "$findresult"
+fi

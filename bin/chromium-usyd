@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# run chromium using the USYD credentials
+chromium --proxy-pac-url=http://www.usyd.edu.au/proxy.pac
