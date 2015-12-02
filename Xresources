@@ -65,8 +65,8 @@ xft*rgba:                   rgb
 !===============================================================================
 ! URXVT settings
 !===============================================================================
-urxvt.background:           #000000
-urxvt.blurRadius:           15
+urxvt.background:           base00
+urxvt.blurRadius:           10
 urxvt.borderless:           true
 urxvt.cursorBlink:          true
 urxvt.depth:                32
@@ -79,13 +79,13 @@ urxvt.iso14755:             false
 urxvt.iso14755_52:          false
 urxvt.lineSpace:            0
 urxvt.saveLines:            65535
-urxvt.scrollBar:            true
+urxvt.scrollBar:            false
 urxvt.scrollBar_right:      true
 urxvt.scrollBar_floating:   true
 urxct.scrollstyle:          plain
 urxvt.shading:              40
 urxvt.tintcolor:            #FF0000
-urxvt.transparent:          true
+urxvt.transparent:          false
 urxvt.urgentOnBell:         false
 urxvt.visualBell:           false
 !===============================================================================
