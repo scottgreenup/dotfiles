@@ -53,7 +53,7 @@ for fd in ${dotfiles[@]}; do
 done
 
 # Link up common directories
-directories=(bin etc)
+directories=(bin etc theme)
 for fd in ${directories[@]}; do
     ln -sfv "$(pwd)/${fd}" "${INSTALL_DIR}/"
 done
