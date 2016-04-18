@@ -62,3 +62,25 @@ ln -sfv "$(pwd)/lib/oh-my-zsh" "${INSTALL_DIR}/.oh-my-zsh"
 
 mkdir -p "${INSTALL_DIR}/.oh-my-zsh/custom/themes"
 ln -sfv "$(pwd)/xathereal.zsh-theme" "${INSTALL_DIR}/.oh-my-zsh/custom/themes/xathereal.zsh-theme"
+
+# vim stuff
+
+specific="\
+    lib/base16-vim/colors/base16-tomorrow.vim .vim/colors/base16-tomorrow.vim\
+    lib/base16-vim .vim/bundle/base16-vim\
+    lib/nerdtree .vim/bundle/nerdtree\
+    lib/vim-better-whitespace .vim/bundle/vim-better-whitespace\
+    lib/vim-pathogen/autoload/pathogen.vim .vim/autoload/pathogen.vim\
+"
+
+set -- $specific
+while [ ! -z "$1" ]; do
+    #echo "($(pwd)/$1, ${INSTALL_DIR}/$2)"
+    ln -sfv\
+        "$(pwd)/${1}"\
+        "${INSTALL_DIR}/${2}"
+    shift 2
+done
+
+
+

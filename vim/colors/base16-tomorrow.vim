@@ -1,1 +1,1 @@
-../../lib/base16-vim/colors/base16-tomorrow.vim
+/home/scott/dotfiles-proper/lib/base16-vim/colors/base16-tomorrow.vim
