@@ -32,6 +32,7 @@ dotfiles=(\
     conkyrc\
     conky_dzen\
     dir_colors\
+    dzen_icons\
     gitconfig\
     tmux.conf\
     vim\
