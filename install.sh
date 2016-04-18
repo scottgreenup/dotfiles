@@ -27,9 +27,17 @@ fi
 
 # Create the symbolic links
 dotfiles=(\
+    bashrc\
+    bash_profile\
+    conkyrc\
+    conky_dzen\
+    dir_colors\
+    gitconfig\
     tmux.conf\
     vim\
     vimrc\
+    xinitrc\
+    xmodmaprc\
     xmonad\
     Xresources\
     zprofile\
@@ -50,7 +58,7 @@ for fd in ${directories[@]}; do
 done
 
 # Deal with special cases
-ln -sfv lib/oh-my-zsh "${INSTALL_DIR}/.oh-my.zsh"
+ln -sfv "$(pwd)/lib/oh-my-zsh" "${INSTALL_DIR}/.oh-my-zsh"
 
 mkdir -p "${INSTALL_DIR}/.oh-my-zsh/custom/themes"
 ln -sfv "$(pwd)/xathereal.zsh-theme" "${INSTALL_DIR}/.oh-my-zsh/custom/themes/xathereal.zsh-theme"

@@ -1,0 +1,22 @@
+background no
+out_to_console yes
+out_to_x no
+total_run_times 0
+update_interval 1.0
+use_spacer none
+
+TEXT
+^fg(\#282A2E)^bg()\
+^i(/home/scott/theme/arrow32.xbm)\
+^fg(\#81A2bE)^bg(\#282A2E)\
+ ${battery_percent BAT0} ^i(/home/scott/.dzen_icons/bat_full_01.xbm) \
+ ${battery_percent BAT1} ^i(/home/scott/.dzen_icons/bat_full_01.xbm) \
+ ${cpu} ^i(/home/scott/.dzen_icons/cpu.xbm)\
+^fg(\#1D1F21)^bg(\#282A2E)\
+^i(/home/scott/theme/arrow32.xbm)\
+^fg(\#81A2bE)^bg(\#1D1F21)\
+ ${time %A, %b %d, %H:%M}\
+^fg(\#282a2e)^bg()\
+ ^i(/home/scott/theme/arrow32.xbm)\
+^fg(\#81a2be)^bg(\#282A2E)\
+^ca(1, /home/scott/bin/de_dzen_pacman)^i(/home/scott/.dzen_icons/pacman.xbm)^ca()
