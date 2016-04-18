@@ -2,14 +2,18 @@
 " This must be first, because it changes other options as side effect
 set nocompatible
 
+"-------------------------------------------------------------------------------
+" Leader customisations
+"-------------------------------------------------------------------------------
 " Quickly reload the vimrc file
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>ev :e  $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-" toggle functionalities
+" Toggle functionalities
 nmap <silent> <leader>n  :set nonu! <bar> set nornu!<CR>
 nmap <silent> <leader>p  :set nopaste!<CR>
+"-------------------------------------------------------------------------------
 
 let g:snips_author='Scott Greenup'
 
@@ -21,9 +25,6 @@ set hidden              " can edit a new file without saving the first
 set history=1000        " more history, more commands
 set hlsearch            " highlight the searched terms
 set incsearch           " show search matches as you type "set spell
-"set lazyredraw          " don't redraw unless you have to
-"set list
-"set listchars=tab:>.,trail:~,extends:#,nbsp:.
 set nowrap              " don't wrap lines
 set number              " shows the number of the cursor line
 set relativenumber      " shows relative distance between lines
@@ -91,22 +92,27 @@ map <F7> :w<CR>:!ispell -x -d british %<CR><CR>:e<CR><CR>
 
 let NERDTreeShowBookmarks=1
 
-" Fuck you, help key.
-"noremap  <F1> :set invfullscreen<CR>
-"inoremap <F1> <ESC>:set invfullscreen<CR>a
+" Reomve the help key.
+noremap  <F1> :set invfullscreen<CR>
+inoremap <F1> <ESC>:set invfullscreen<CR>a
 
+" Remove the hash key.
 inoremap # X<BS>#
 
+" Makes indenting easier:
 vnoremap < <gv
 vnoremap > >gv
 
+" Makes moving easier.
 nnoremap j gj
 nnoremap k gk
 
+" Remove highlights on F12
 nnoremap <silent> <F12> :noh<cr>
 
 autocmd FileType gitcommit DiffGitCached | wincmd L | wincmd p
 
+" Pathogen for third-party libraries
 call pathogen#infect()
 call pathogen#helptags()
 
