@@ -1,0 +1,52 @@
+# quick jumps
+alias -r cdpm='cd /home/scott/code/dev/opengl/ProjectImperial'
+
+# coding
+alias -r gccw='gcc -ansi -pedantic -Wall '
+alias -r g++w='g++ -pedantic -Wall  '
+alias -r gdb='gdb -q -ex run'
+
+# general command line
+alias -r c='clear'
+alias -r cls="clear && ls -l"
+alias -r clt="clear && tree"
+alias -r l='ls -oh'
+alias -r lt='ls -lhtc'
+alias -r la='ls -lha'
+alias -r ll='ls -l'
+alias -r rm='rm -I'
+
+alias -r kc="eval \`keychain --eval --agents ssh --timeout 300 --quiet id_rsa\`"
+alias -r kchour="eval \`keychain --eval --agents ssh --timeout 3600 --quiet id_rsa\`"
+
+# program with flags
+alias -r vim='vim -O'
+
+# data
+alias -r hda='hexdump -ve '"'"'1/1 "%.2x"'"'" # glue the quotes
+
+# git
+alias -r g='/usr/bin/git status'
+alias -r gu='/usr/bin/git pull'
+alias -r gp='/usr/bin/git push'
+alias -r ga='/usr/bin/git add'
+alias -r gd='/usr/bin/git diff'
+alias -r gb='/usr/bin/git branch'
+alias -r gba='/usr/bin/git branch -a'
+alias -r gc='/usr/bin/git commit'
+alias -r gca='/usr/bin/git commit -a'
+alias -r gco='/usr/bin/git checkout'
+alias -r gm="/usr/bin/git merge --no-ff"
+alias -r gff="/usr/bin/git merge --ff-only"
+alias -r gl="/usr/bin/git log --date-order --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias -r gla="/usr/bin/git log --date-order --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all"
+alias -r gll="/usr/bin/git log --date-order --graph --oneline"
+
+# xmonad
+alias -r xmre='killall dzen2 && killall trayer && sleep 0.5 && /usr/bin/xmonad --restart'
+alias -r xmrec='/usr/bin/xmonad --recompile && killall dzen2 && killall trayer && /usr/bin/xmonad --restart'
+alias -r xmed='/usr/bin/vim /home/scott/.xmonad/xmonad.hs'
+
+alias -r grep='grep -i'
+
+alias -r ear='echo "You fuck, learn to type '"'clear'."'"'
