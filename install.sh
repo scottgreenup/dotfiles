@@ -52,7 +52,7 @@ for fd in ${dotfiles[@]}; do
 done
 
 # Link up common directories
-directories=(bin)
+directories=(bin etc)
 for fd in ${directories[@]}; do
     ln -sfv "$(pwd)/${fd}" "${INSTALL_DIR}/"
 done

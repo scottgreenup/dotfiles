@@ -1,0 +1,10 @@
+background no
+out_to_console yes
+out_to_x no
+total_run_times 0
+update_interval 1.0
+use_spacer none
+
+TEXT
+^fg(\#81A2BE)^bg()\
+ ${execi 1 spotify_track}\
