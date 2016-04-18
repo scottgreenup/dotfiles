@@ -14,7 +14,7 @@ if len(sys.argv) < 2:
 target = sys.argv[1]
 
 print "performing traceroute...\n"
-x = Popen("sudo traceroute -I 128.199.252.81", shell=True, stdout=PIPE).stdout.read()
+x = Popen("sudo traceroute -I {}".format(target), shell=True, stdout=PIPE).stdout.read()
 
 splat = x.split('\n')
 splat = splat[2:]

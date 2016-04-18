@@ -56,9 +56,9 @@
 !===============================================================================
 xft*antialias:              true
 xft*autohint:               false
-xft*dpi:                    96
+xft*dpi:                    176
 xft*hinting:                true
-xft*hintstyle:              hintfull
+xft*hintstyle:              hintslight
 xft*rgba:                   rgb
 !===============================================================================
 
@@ -74,7 +74,7 @@ urxvt.externalBorder:       0
 urxvt.internalBorder:       10
 urxvt.fading:               false
 urxvt.fadeColor:            base00
-urxvt.font:                 xft:Inconsolata-g:size=9:dpi=176
+*.font:                     xft:Fantasque Sans Mono:size=6:dpi=176
 urxvt.iso14755:             false
 urxvt.iso14755_52:          false
 urxvt.lineSpace:            0
@@ -82,10 +82,24 @@ urxvt.saveLines:            65535
 urxvt.scrollBar:            false
 urxvt.scrollBar_right:      true
 urxvt.scrollBar_floating:   true
-urxct.scrollstyle:          plain
+urxvt.scrollstyle:          plain
 urxvt.shading:              40
 urxvt.tintcolor:            #FF0000
 urxvt.transparent:          false
 urxvt.urgentOnBell:         false
 urxvt.visualBell:           false
+!===============================================================================
+
+!===============================================================================
+! XScreenSaver
+!===============================================================================
+xscreensaver.fade: True
+xscreensaver.fadeSeconds: 0:00:01
+
+xscreensaver.Dialog.borderwidth: 0
+xscreensaver.Dialog.internalBorderWidth: 0
+xscreensaver.Dialog.shadowThickness: 0
+
+xscreensaver.passwd.thermometer.width: 0
+
 !===============================================================================
