@@ -27,6 +27,7 @@ fi
 
 # Create the symbolic links
 dotfiles=(\
+    tmux.conf\
     vim\
     vimrc\
     xmonad\
@@ -36,10 +37,10 @@ dotfiles=(\
     zshrc_alias\
 )
 
-INSTALL_DIR="${HOME}/test_home"
+INSTALL_DIR="${HOME}"
 
 for fd in ${dotfiles[@]}; do
-    ln -sfv "$(pwd)/${fd}" "${INSTALL_DIR}/.${fd}"
+    ln -sfv -T "$(pwd)/${fd}" "${INSTALL_DIR}/.${fd}"
 done
 
 # Link up common directories
@@ -52,4 +53,4 @@ done
 ln -sfv lib/oh-my-zsh "${INSTALL_DIR}/.oh-my.zsh"
 
 mkdir -p "${INSTALL_DIR}/.oh-my-zsh/custom/themes"
-ln -sfv xathereal.zsh-theme "${INSTALL_DIR}/.oh-my-zsh/custom/themes/xathereal.zsh-theme"
+ln -sfv "$(pwd)/xathereal.zsh-theme" "${INSTALL_DIR}/.oh-my-zsh/custom/themes/xathereal.zsh-theme"
